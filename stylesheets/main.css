@@ -1,0 +1,91 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/* HEADING */
+
+header {
+	margin: 30px auto;
+	width: 95%;
+}
+
+h1 {
+	text-align: center;
+	font-size: 3.5em;
+	font-weight: bold;
+}
+
+img {
+	max-width: 50%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+/* PAGE TEXT */
+
+#page-text {
+	width: 80%;
+	margin: 0 auto 20px;
+	font-size: 1.2em;
+	height: 275px;
+	overflow: scroll;
+}
+
+#page {
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+#page-number {
+	font-weight: bold;
+	margin-top: 25px;
+	text-align: center;
+}
+
+/* BUTTONS */
+
+#buttons-outer {
+	padding: 5px;
+}
+
+#buttons-inner {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.button {
+	text-align: center;
+	margin: 0 auto;
+	background-color: orange;
+	line-height: 2em;
+	margin-bottom: 20px;
+	width: 60%;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+
+
+/* Apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*----------------------------------*/
+/* Clearfix for floats              */
+/*----------------------------------*/
+.cf:before,
+.cf:after {
+   content:"";
+   display:table;
+}
+.cf:after {
+   clear:both;
+}
+.cf {
+   zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
